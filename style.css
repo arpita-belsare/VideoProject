@@ -1,0 +1,90 @@
+header{
+    min-height: 90vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+}
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: antiquewhite;
+    display: grid;
+    
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: all 0.3s ease-in;
+}
+.hide-preloader{
+    z-index: -999;
+    visibility: hidden;
+}
+.video-container{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+h1{
+color: #f8f1f4;
+}
+.switch-btn{
+    position: absolute;
+    bottom: 9%;
+    left: 7%;
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: baseline;
+    border: none;
+    transition: all 03s ease;
+}
+.switch-btn span{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(97, 208, 236, 0.2);
+    border-radius: 10px;
+    margin: 0%;
+    /* display: block; */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.switch-btn span{
+    font-size: 0.9em;
+    font-weight: 900;
+}
+.switch-btn span:nth-child(1){
+    margin-left: 50%;
+}
+.switcha{
+    margin-left: 50%;
+    text-align: right;
+}
+.slide .switch{
+    left: 50%;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background:rgba( 0,0,0,0.7);
+    z-index: -1;
+}
